@@ -8,7 +8,7 @@ module.exports = {
     mode: 'development',
     devtool: false,        // 关闭生成sourcemap
     entry: {
-        lks: './index.js',
+        lks: './index.ts',
     },
     output: {
         path: path.resolve('dist'),             // 输出到dist目录
