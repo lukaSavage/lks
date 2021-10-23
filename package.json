@@ -2,7 +2,7 @@
     "name": "lks",
     "version": "1.0.0",
     "description": "一个用于React项目的组件库，全名lukasavage",
-    "main": "index.js",
+    "main": "lib/index.js",
     "files": [
         "dist",
         "es",
@@ -10,8 +10,12 @@
     ],
     "scripts": {
         "build": "webpack",
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
+        "storybook": "start-storybook -p 7006",
+        "build-storybook": "build-storybook",
+        "test:unit": "jest --config unit.jest.ts",
+        "test:e2e": "jest --config e2e.jest.ts",
+        "test": "npm run test:unit && npm run test:e2e",
+        "compile": "gulp compile"
     },
     "publishConfig": {
         "access": "public",
