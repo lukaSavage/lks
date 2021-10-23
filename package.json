@@ -1,6 +1,6 @@
 {
     "name": "lks",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "一个用于React项目的组件库，全名lukasavage",
     "main": "lib/index.js",
     "files": [
@@ -19,7 +19,7 @@
     },
     "publishConfig": {
         "access": "public",
-        "registry": "http://registry.npmjs.org"
+        "registry": "https://registry.npmjs.org"
     },
     "keywords": [
         "react",
@@ -35,6 +35,9 @@
         "react": "^17.0.2",
         "react-dom": "^17.0.2"
     },
+    "module": "es/index.js",
+    "unpkg": "dist/lks.js",
+    "typings": "lib/index.d.ts",
     "devDependencies": {
         "@babel/core": "^7.15.5",
         "@babel/plugin-transform-runtime": "^7.15.0",
